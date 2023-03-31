@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>京都国立近代美術館 | The Museum of Modern Art, Kyoto</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- fonts -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'lau5koj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- js file -->
+    <script src="js/site.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <h1>
+          <button id="js-pagetop_logo"><img src="img/logo-top.svg" class="top_logo" alt="京都国立近代美術館｜MoMAK The Museum of Modern Art, Kyoto"></button>
+        </h1>
+        <div class="navi container">
+          <h2><a href="index.html">京都国立近代美術館</a></h2>
+          <ul class="pagelink">
+            <li class="btn"><a href="about.html">about</a></li>
+            <li class="btn"><a href="exhibition.html">exhibition</a></li>
+            <li class="btn"><a href="collections.html">collections</a></li>
+          </ul>
+         <ul class="snslink">
+            <li class="icon"><img src="img/logo_ig.png" alt="official instagram"></li>
+            <li class="icon"><img src="img/logo_fb.png" alt="official facebook"></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Top-img -->
+      <div class="topimg" id="slideshow">
+        <img src="img/slide01.jpg" class="slide1" alt="メインビジュアル">
+        <img src="img/slide02.jpg" class="slide2" alt="メインビジュアル">
+        <img src="img/slide03.jpg" class="slide3" alt="メインビジュアル">
+      </div>
+      <!-- sec01 -->
+      <div class="sec01">
+        <div class="left">
+          <h3 class="Ltxt">
+            <a href="about.html"><span class="en">about MoMAK</span><span class="jp">美術館について</span></a>
+          </h3>
+          <img src="img/sec01_01.jpg" class="sec01img" alt="館内イメージ">
+        </div>
+        <div class="right">
+          <img src="img/sec01_02.png" class="sec01img" alt="館内イメージ">
+          <h3 class="Rtxt">
+            <a href="collections.html"><span class="en">collections</span><span class="jp">収蔵品のご紹介</span></a>
+          </h3>
+        </div>
+      </div>
+      <!-- sec02 -->
+      <div class="sec02">
+        <img  class="sec02img" src="img/sec02.jpg" alt="館内イメージ">
+      </div>
+      <!-- sec03 -->
+      <div class="sec03">
+        <h3>
+          <span class="en recent_ex">Recent exhibitions</span>
+        </h3>
+        <div class="ex_list">
+          <div class="ex">
+            <img src="img/ex01.jpg" alt="令和4年度 第5回 コレクション展">
+            <div class="excont"><span class="exname">令和4年度 第5回<br>コレクション展</span><span class="exdate">2023.1.28 ― 2023.4.16</span></div>
+          </div>
+          <div class="ex">
+            <img class="eximg" src="img/ex02.jpg" alt="リュイユ ― フィンランドのテキスタイル">
+            <div class="excont"><span class="exname">リュイユ ― フィンランドのテキスタイル：<br>トゥオマス・ソパネン・コレクション</span><span class="exdate">2023.1.28 ― 2023.4.16</span></div>
+          </div>
+          <div class="ex">
+            <a href="exhibition.html">
+              <img class="eximg" src="img/ex03.jpg" alt="開館60周年記念 甲斐荘楠音の全貌">
+              <div class="excont"><span class="exname">開館60周年記念<br>甲斐荘楠音の全貌 ― 絵画、演劇、映画を越境する個性</span><span class="exdate">2023.2.11 ― 2023.4.9</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- back_to_Top button -->
+    <button id="js-pagetop" class="pagetop"><span class="pagetop_arrow"></span></button>
+    <!-- footer -->
+    <footer>
+      <div class="container footer_logo"><img src="img/logo-footer.svg" alt="©︎MoMAK The Museum of Modern Art, Kyoto"></div>
+    </footer>
+  </body>
+</html>

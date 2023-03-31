@@ -1,0 +1,341 @@
+/* Top page_CSS */
+
+/* ---------------------
+  Name: index.css
+--------------------- */
+
+
+/* common
+------------------------------------------------------------------------- */
+  body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    font-style: normal;
+  }
+  .container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  img{
+    vertical-align: bottom;
+  }
+  a{
+    display: block  ;
+    text-decoration: none;
+    color: #000000;
+  }
+  .en{
+    display: block;
+    font-family: "din-condensed", sans-serif;
+    font-size: 40px;
+    text-align: center;
+  }
+  .jp{
+    display: block;
+    font-family: "fot-udkakugoc70-pro", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  h3{
+    margin: 0px;
+  }
+
+/* header
+------------------------------------------------------------------------- */
+  header{
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 1px black;
+    box-shadow: 0 0 8px gray;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 158px;
+    z-index: 100;
+  }
+  .top_logo{
+    width: 316px;
+    margin: 20px 0px 15px;
+  }
+  #js-pagetop_logo{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+  h1{
+    margin: 0px 0px;
+  }
+  /* header-navigation */
+    .navi{
+      width: 100%;
+      max-width: 1200px;
+      height: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h2{
+      font-family: "fot-udkakugoc70-pro", sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.1em;
+      margin: 0px 0px 0px 4px ;
+    }
+    .pagelink{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 80px;
+      padding: 0px;
+    }
+    li {
+      font-family: "din-condensed", sans-serif;
+      font-size: 28px;
+      font-weight: 300;
+      list-style: none;
+    }
+    li a{
+      position: relative;
+    }
+    li a:after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: black;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.4s;
+    }
+    li a:hover::after {
+      visibility: visible;
+      opacity: 1;
+    }
+    .btn{
+      margin: 0px 65px;
+    }
+    .snslink {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0px;
+    }
+    .icon{
+      margin: 0px 4px;
+      transition: 0.4s;
+    }
+    .icon:hover{
+      opacity: 0.5;
+      transition: 0.4s;
+    }
+
+/* Top-img
+--------------------------------------------------------------------------- */
+  .topimg{
+    text-align: center;
+    height: 800px;
+  }
+
+  .topimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 158px;
+  }
+  /* slideshow */
+  /* 01 */
+  @keyframes slide1 {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    40% {}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  /* 02 */
+  @keyframes slide2 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    35% {opacity: 1;}
+    65% {}
+    75% {opacity: 1;}
+    85% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  /* 03 */
+  @keyframes slide3 {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  /* #slideshow */
+  #slideshow{
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+  }
+  /* 02, 03 */
+  .slide2,.slide3{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+  }
+  /* 01 */
+  .slide1 {
+    animation-name: slide1;
+  }
+  /* 02 */
+  .slide2 {
+    animation-name: slide2;
+  }
+  /* 03 */
+  .slide3 {
+    animation-name: slide3;
+  }
+
+/* sec01
+--------------------------------------------------------------------------- */
+  .sec01{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec01img{
+    width: 100%;
+  }
+  .left, .right{
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+  }
+  h3 a{
+    padding: 150px;
+    background: #fff;
+    transition: 0.4s;
+  }
+  .Ltxt a:hover{
+    color: #fff;
+    background: #ff8a8a;
+    transition: 0.4s;
+  }
+  .Rtxt a:hover{
+    color: #fff;
+    background: #598bff;
+    transition: 0.4s;
+  }
+
+/* sec02
+--------------------------------------------------------------------------- */
+  .sec02{
+    height: 800px;
+    overflow: hidden;
+  }
+  .sec02img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -120px;
+  }
+
+/* sec03
+--------------------------------------------------------------------------- */
+  .sec03{
+    background-color: gainsboro;
+  }
+  h3 .recent_ex{
+    padding: 60px 0px;
+  }
+  /* ex_list */
+  .ex_list{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 90px;
+  }
+  .ex{
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    transition: 0.4s;
+    box-shadow: 0 0 12px gray;
+  }
+  .ex:hover{
+    opacity: 0.7;
+    transform: scale(1.03, 1.03);
+    transition: 0.4s;
+  }
+  .eximg{
+    width: 100%;
+  }
+  .excont{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 120px;
+    background-color: #fff;
+    border-top: solid 1px gainsboro;
+    font-family: "ryo-gothic-plusn", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 4px 0px 0px 5px;
+  }
+  .exname{
+    letter-spacing: 0.1em;
+  }
+  .exdate{
+    display: block;
+    font-family: "fot-udkakugoc70-pro", sans-serif;
+    letter-spacing: 0.1em;
+    color:rgb(125, 125, 125);
+  }
+
+/* back_to_Top button
+--------------------------------------------------------------------------- */
+  .pagetop {
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 24px;
+    bottom: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border: solid 1px #000;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .pagetop_arrow {
+    display: block;
+    height: 5px;
+    width: 5px;
+    border-top: 1.5px solid #000;
+    border-right: 1.5px solid #000;
+    transform: translateY(20%) rotate(-45deg);
+  }
+
+/* footer
+--------------------------------------------------------------------------- */
+.footer_logo{
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 0px 15px;
+}
